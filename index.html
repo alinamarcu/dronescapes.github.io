@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Dronescapes</title>
+  <link rel="icon" type="image/x-icon" href="static/images/drone.webp">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Dronescapes: A large-scale dataset for multi-task scene understanding from real UAV flights</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=f6ZgtcAAAAAJ&hl=en&oi=ao" target="_blank">Alina Marcu</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=mZhi-2cAAAAJ&hl=en&oi=ao" target="_blank">Mihai Pirvu</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=oQCpg28AAAAJ&hl=en&oi=ao" target="_blank">Dragos Costea</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com/citations?user=KK1d87cAAAAJ&hl=en&oi=sra" target="_blank">Emanuela Haller</a><sup>3</sup>,</span>
+                      <span class="author-block">
+                      <a href="https://scholar.google.com/citations?user=1fwT6psAAAAJ&hl=en&oi=ao" target="_blank">Emil Slusanschi</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com/citations?user=rZddN3gAAAAJ&hl=en&oi=ao" target="_blank">Ahmed Nabil Belbachir</a><sup>4</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://scholar.google.com/citations?user=bmZbi_UNs-oC&hl=en&oi=ao" target="_blank">Rahul Sukthankar</a><sup>5</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=se9kni0AAAAJ&hl=en&oi=ao" target="_blank">Marius Leordeanu</a><sup>1,2,4</sup></span>
+                            <span class="author-block">
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <p>
+                      <sup>1</sup>UPB&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>IMAR&nbsp;&nbsp;&nbsp;&nbsp;<sup>3</sup>Bitdefender&nbsp;&nbsp;&nbsp;&nbsp;<sup>4</sup>NORCE&nbsp;&nbsp;&nbsp;&nbsp;<sup>5</sup>Google Research
+                    </p>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>denotes the primary contact</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://openaccess.thecvf.com/content/ICCV2023W/LIMIT/papers/Marcu_Self-Supervised_Hypergraphs_for_Learning_Multiple_World_Interpretations_ICCVW_2023_paper.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/datasets/Meehai/dronescapes" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <!-- <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span> -->
+                      <span class="icon">
+                        <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Emoji" style="width: 1em; height: 1em;">
+                      </span>
+                      <span>Dronescapes Dataset</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://gitlab.com/meehai/neo-vcl-iccv-2023" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link 
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="image">
+        <img src="/media/alina/Data/research/dronescapes/dronescapes.github.io/static/images/dataset_samples_figure.jpg" alt="Teaser Image" style="width: 100%; height: auto;">
+      </div>
+      <br>
+      <h2 class="subtitle has-text-justified">
+        Sample frames from each of the 10 scenes from the Dronescapes dataset. The scenes framed with <span style="color: green;">green</span> borders
+        represent training scenes for which we have access to a small fraction of manual annotations during training. The others
+        depict unseen, test scenes with semantic distributions that are closer to the training set (in <span style="color: blue;">blue</span>) or out-of-distribution (<span style="color: red;">red</span>).
+        There is a large variation in spatial distributions of classes among the different Dronescapes scenes, which range from rural
+        (Atanasie - Mila 23, Cheile Grădiștei, Petrova, Bârsana, Comana), to urban (Olănești, Herculane, Slănic Moldova) and seaside (Jupiter, Norway), while
+        also being geographically far apart. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Dronescapes Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce a large-scale UAV video dataset with automatic odometry and 3D information 
+            for all frames and semi-automatic semantic segmentation annotation for a subset of frames.
+            All video sequences include GPS information, linear and angular velocities, 
+            and absolute camera angles. The total length is about 50 minutes. 
+            Videos have 3840 × 2160 30 FPS images, while the odometry is provided at 10 Hz. 
+            We collect a total of 10 widely varied scenes that we split into 7 training and 3 test scenes. 
+            We highlight the variety in landscapes, altitudes, and object scales between each of the rural 
+            (Atanasie - Mila 23, Cheile Grădiștei, Petrova, Bârsana, Comana), urban 
+            (Olănești, Herculane, Slănic Moldova) and seaside scenes (Jupiter, Norway). 
+            For the test scenes we chose three different kinds: one (Bârsana) with a 
+            more similar semantic class distribution to at least one of the training scenes, one (Comana) 
+            that is less similar to the training scenes and a third one (Norway), that is very different from any of the training scenes.
+          </p>
+          <figure>
+            <img src="static/images/multiscale_histograms_isomap_distribution_shifts_norway.png" alt="Descriptive Figure" style="width: 100%; height: auto;">
+            <figcaption>Visualization and analysis of semantic distributions per scene and their shifts between the training and testing scenes.</figcaption>
+          </figure>
+          <p>
+            To illustrate the complexity and diversity of the scenes captured, we conducted an in-depth analysis 
+            of the semantic distributions across different environments. This analysis not only highlights the 
+            richness of our dataset but also demonstrates the varying degrees of difficulty in generalizing learned 
+            models across different scenes. By projecting test scenes onto the space defined by our training data, 
+            we can visually assess how well our model might generalize to new environments. This projection showcases 
+            the varying degrees of distribution shift between our training and testing sets, offering a glimpse into the 
+            challenges our models face when encountering new, unseen landscapes. For instance, we observed that the 
+            Bârsana test scene closely aligns with our training distribution, suggesting that models trained on 
+            our dataset might perform well in this environment. In contrast, the Comana scene presents a moderate challenge, 
+            while the Norway scene emerges as a true out-of-distribution case, pushing the boundaries of our models' generalization capabilities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Visual Representations</h2>
+        <div class="content has-text-justified">
+          <p>
+          <!-- Input -- We consider, besides the main
+          RGB input node, other input nodes that are mathematically
+          derived from RGB, such as HSV color, soft edges and
+          soft segmentation, which are effective by expanding
+          the number of edges and indirectly improving the power of
+          the ensembles that they form at the output nodes and we added
+          to the pool of input nodes an unsupervised metric depth map to further increase the set of visual representations
+          for an improved scene understanding. --->
+          <strong>Inputs.</strong> We expand our visual understanding of the scene by incorporating multiple representations derived 
+          from the primary RGB input. These additional representations include HSV color space, soft edges, and soft segmentation maps. 
+          By mathematically transforming the RGB data into these complementary forms, we effectively increase the number 
+          of connections in our hypergraph model. This expansion indirectly enhances the power of the ensembles formed at 
+          the output representations. To further enrich our set of visual representations and improve overall scene comprehension, 
+          we also incorporate an unsupervised metric depth map. This addition provides valuable 3D structural information, 
+          complementing the 2D data from other representations. By leveraging this diverse array of visual cues, our model gains 
+          a more comprehensive understanding of the complex drone-captured scenes, enabling more robust and accurate predictions across various tasks.
+          </p>
+          <figure class="image-container">
+            <img src="static/images/collage_remastered.png" alt="Descriptive Image" style="width: 100%; height: auto;">
+            <figcaption>Types of visual representations from the Dronescapes dataset, some derived using UAV flights, 
+              others using well-known models for various tasks. For more details about each representation please read the paper or visit 
+              <a href="https://gitlab.com/meehai/video-representations-extractor" target="_blank">this page</a>.</figcaption>
+          </figure>
+          
+          <p><strong>Annotations (manual, semi and fully-automatic).</strong> For the semantic segmentation map, every pixel in a frame is labeled with one of
+            the 8 classes - land, forest, residential, road, little-objects, water, sky and hill. The
+            annotations process was difficult, especially because some objects are too small to be
+            seen clearly, while other larger regions can fall into multiple categories (e.g., an area
+            can be labeled as hill, land, and forest at the same time). The drone trajectory computed 
+            with structure from motion (SfM) is aligned automatically with the trajectory from GPS, 
+            by a similarity transformation (translation, rotation, and scale), which is then applied to the SfM 3D model. 
+            By combining it with the known 6D pose (from GPS and odometry) and camera intrinsic parameters,
+            we obtain accurate metric depth maps (less than 2% error in our extensive offline
+            tests). The generated metric depth maps are used for training only during Iteration 1,
+            otherwise used for evaluation purposes. We automatically processed the SfM 3D meshes in
+            Blender and obtained surface normals at every pixel w.r.t world coordinates, which,
+            multiplied with the inverse of the camera rotation matrix give normals w.r.t camera
+            (aka. ”camera normals”).
+          </p><br>
+
+          <p><strong>Dataset split.</strong> Exclusively for the task of semantic segmentation, we
+            sparsely manually annotate frames. Based on their number we divide the scenes in
+            weakly-labeled scenes (Cheile Gradistei, Herculane, Jupiter, Petrova, Olanesti, Barsana and
+            Comana) and strongly-labeled scenes (Atanasie - Mila 23, Slanic Moldeova and Norway). For the strongly
+            labeled scenes, we sample frames every 2 seconds covering the whole video. For the
+            weakly-labeled scenes, we uniformly sample triplets of frames from each scene, such
+            that the frames in each triplet are 2 seconds apart (or 60 frames between the triplet
+            limits), while the triplets are at least 26 seconds apart and have significant changes in
+            pose (viewpoint). We divided our dataset into 4 sets, in a suitable manner for multiple
+            training iterations with the addition of novel data every iteration. 
+            Half of the triplets/frames from the training scenes are
+            included in Train Unlabeled (iter 1), whilst the other half is in Train Unlabeled (iter 2).
+            The frames from all the test scenes are included in Train Unlabeled (iter 3). We note
+            that the only manually-labeled frames used in learning the hypergraph are the frames
+            from Train Labeled set, whilst the rest are used for evaluation purposes only.
+          </p>
+          <figure class="image-container">
+            <img src="static/images/dronescapes_dataset_split.PNG" alt="Descriptive Image" style="width: 50%; height: auto;">
+            <figcaption>Dronescapes dataset split. For each training scene we report the number
+              of frames used for purely supervised training (Train Labeled set), and also for iterative
+              self-supervised training (Train Unlabeled iterations 1, 2 and 3 sets). In parenthesis
+              we show the number of frames for which we have manual segmentation annotations.
+              Except for the Train Labeled set on the training scenes, all the other annotations are
+              used strictly for evaluation.
+              </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Hypergraph Learning on Dronescapes</h2>
+        <div class="content has-text-justified">
+          <p>
+            We focus on scenarios where exact ground truth or human annotations are
+            very scarce or simply not available, which is a very common case in practice. 
+            Such an example is the case of learning from UAV videos, which is representative 
+            for our scenario and also extremely difficult due to the wide variety
+            and complexity of scenes and camera viewpoints. 
+
+            Learning in the hypergraph requires an initial set of annotations, 
+            which is either given by humans, automatically
+            generated (by an offline analytical method) or provided by
+            a pretrained expert. These annotations are used to initialize 
+            the individual edges and hyperedges and then learn the
+            ensemble functions. Once the initialization stage is completed, 
+            we can proceed with the semi-supervised learning
+            stages (iterations), in which we first produce pseudolabels
+            on newly added data, then retrain the individual edges and
+            hyperedges on the new pseudolabels (including all the other
+            labels and pseudolabels available from previous iterations). 
+            Succinctly, each self-supervised learning iteration consists
+            of 1) adding new unlabeled data; 2) producing pseudolabels
+            for the new data; 3) retraining the hyperedges by including
+            the new pseudolabeled data in the training set.
+          </p><br>
+
+          <figure class="video-container">
+            <video controls style="width: 100%; height: auto;">
+              <source src="static/videos/summary_paper_presentation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Summary of our hyperpgraph learning procedure for multi-task scene understanding.</figcaption>
+          </figure>
+
+          <p>
+            Each self-supervised learning cycle we add new unlabeled data. 
+            We first produce pseudolabels for each output task by using ensembles
+            of edges and hyperedges and then retrain (distill) the next
+            generation of edges and hyperedges by including the pseudolabeled data during training. 
+            For clarity, we detail further how we use the current dataset split in our iterative learning
+            procedure: Iteration 1) Using the Train Labeled dataset,
+            we employ a semi-automatic label propagation method
+            to annotate intermediate frames from adjacent manually la-
+            beled ones and obtain Train Unlabeled (iter 1). For depth
+            and normals, we use the automatically generated labels as
+            described before. For Iteration 2) we used the fully-trained
+            hypergraph from Iteration 1 and generate pseudolabels for
+            frames in Train Unlabeled (iter 2) set, using the hypergraph
+            ensembles for all the predicted tasks. We join the two sets
+            Train Unlabeled (iter 1 + 2) and retrain the hypergraph. For
+            Iteration 3) we repeat the steps from Iteration 2 and generate pseudolabels 
+            on the Train Unlabeled (iter 3) set, to expand the set to Train Unlabeled (iter 1 + 2 + 3).
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Improvements on Novel Scenes</h2>
+        <div class="content has-text-justified">
+          <p>
+          We showcase the capabilities of the hypergraph to adapt to novel unseen environments while leveraging and even improving 
+          upon state-of-the-art foundation models for semantic segmentation. We apply our hypergraph learning technique 
+          in a unique, multi-phase approach. This process involves initial training on known data, fine-tuning on Mask2Former's outputs 
+          for new scenes, and a final phase of self-supervised learning on unlabeled data from these novel environments. 
+          The results of this approach are truly remarkable. Not only does our method improve upon the already impressive performance 
+          of Mask2Former, but it does so with a model that is significantly more compact - using two orders of magnitude fewer parameters. 
+          This achievement underscores the efficiency and power of our hypergraph learning technique. 
+          Perhaps most intriguingly, our approach demonstrates a substantial enhancement in temporal consistency, especailly 
+          visible in the video spectrum. 
+          This improvement suggests that the self-supervised consensus among multiple tasks effectively reduces classifier 
+          variance, potentially leading to more reliable and trustworthy predictions.
+          </p><br>
+          <figure class="video-container">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/YkdKfjK-6lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>We present qualitative improvements on novel scenes. In order (left to right, top to bottom) we display the 
+              1) RGB frames, 2) Mask2Former (raw per-frame predictions), 3) Segprop Labels (pseudo-ground truth), 
+              4) Our best single edge model (1.1M parameters) after 3 iterations of learning with hypergraph consensus.
+              We provide a joint video with all the test scenes: Barsana, Comana, and Norway, 
+              to showcase the distinction between scenes with similar class distributions (Barsana, Comana) 
+              and those that are completely different (Norway). 
+            </figcaption>
+          </figure>
+                    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+ End image carousel -->
+
+
+<!-- Youtube video
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End video carousel -->
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">ICCVW23 Poster</h2>
+
+      <iframe  src="static/pdfs/poster_iccv_final.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+<!-- Ack -->
+<section class="section" id="Ack">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <p class="has-text-justified">
+      This work was funded in part by UEFISCDI, under Projects EEA-RO-2018-0496 and 
+      PN-III-P4-ID-PCE-2020-2819, and by a Google Research Gift. We express our sincere gratitude 
+      towards Aurelian Marcu and acknowledge support of National Interest Infrastructure facility 
+      IOSIN-CETAL from NILPRP for providing access to GPU resources.
+    </p>
+  </div>
+</section>
+<!--End Ack -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <p>If you use our Dronescapes dataset, please cite this work: </p>
+    <pre><code>@InProceedings{Marcu_2023_ICCV,
+      author    = {Marcu, Alina and Pirvu, Mihai and Costea, Dragos and Haller, Emanuela and Slusanschi, Emil and Belbachir, Ahmed Nabil and Sukthankar, Rahul and Leordeanu, Marius},
+      title     = {Self-Supervised Hypergraphs for Learning Multiple World Interpretations},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+      month     = {October},
+      year      = {2023},
+      pages     = {983-992}
+  }</code></pre>
+    <p>If you use our code, please cite this work: </p>
+    <pre><code>@InProceedings{Pirvu_2023_ICCV,
+      author    = {Pirvu, Mihai and Marcu, Alina and Dobrescu, Maria Alexandra and Belbachir, Ahmed Nabil and Leordeanu, Marius},
+      title     = {Multi-Task Hypergraphs for Semi-Supervised Learning Using Earth Observations},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+      month     = {October},
+      year      = {2023},
+      pages     = {3404-3414}
+  }</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
